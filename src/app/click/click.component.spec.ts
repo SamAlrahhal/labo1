@@ -8,9 +8,8 @@ describe('ClickComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClickComponent ]
-    })
-    .compileComponents();
+      declarations: [ClickComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ClickComponent);
     component = fixture.componentInstance;

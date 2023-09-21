@@ -2,3 +2,10 @@
   <h1>Yippi</h1>
 </div>
 <app-click></app-click>
+<h2 [click-count]="6">Click me</h2>
+<h1 [click-count]="0">click me</h1>
+
+<button (click)="toggleParagraph()">Toggle Paragraph</button>
+<p *ngIf="showParagraph" rendering-delay>Paragraph with rendering delay</p>
+
+
