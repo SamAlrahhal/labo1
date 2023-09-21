@@ -1,0 +1,10 @@
+<button (click)="toggleDiv()">Show Clicks</button>
+<div *ngIf="showDiv" class="click-list">
+  <h2>List of Clicks</h2>
+  <ul>
+    <li *ngFor="let click of clicks; let i = index" [ngStyle]="{'background-color': i % 2 === 0 ? 'blue' : 'white'}"
+      [ngClass]="{'white-text': i % 2 === 0}">
+      {{ click.serialNumber }} - {{ click.timeStamp | date:'M/d/yy, h:mm' }}
+    </li>
+  </ul>
+</div>
